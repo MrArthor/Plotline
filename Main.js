@@ -1,6 +1,7 @@
 ﻿//javascript.js
 //set map options
 var myLatLng = { lat: 38.3460, lng: -0.4907 };
+
 var mapOptions = {
     center: myLatLng,
     zoom: 7,
@@ -32,7 +33,7 @@ function calcRoute() {
     }
 
     //pass the request to the route method
-    directionsService.route(request, function (result, status) {
+    directionsService.route(request, function(result, status) {
         if (status == google.maps.DirectionsStatus.OK) {
 
             //Get distance and time
