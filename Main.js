@@ -23,16 +23,17 @@ directionsDisplay.setMap(map);
 
 
 //define calcRoute function
-function calcRoute() {
+function calcRoute() { //create request
     //create request
-    var request = {
+    var request = { //
         origin: document.getElementById("from").value,
         destination: document.getElementById("to").value,
-        travelMode: google.maps.TravelMode.DRIVING, //WALKING, BYCYCLING, TRANSIT
-        unitSystem: google.maps.UnitSystem.IMPERIAL
+        travelMode: google.maps.TravelMode.DRIVING,
+        unitSystem: google.maps.UnitSystem.METRIC
     }
 
     //pass the request to the route method
+
     directionsService.route(request, function(result, status) {
         if (status == google.maps.DirectionsStatus.OK) {
 
