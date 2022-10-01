@@ -15,20 +15,25 @@
 
 
     <div class="jumbotron">
-        <div class="container-fluid">
+        <div class="container">
             <h1>Find The Distance Between Two Places.</h1>
             <p>Plotline Backend Assignment Submission By Vansh Sachdeva</p>
-            <a href="https://mrarthor.xyz/">Portfolio</a>
+            <a href="https://mrarthor.xyz/">Portfolio</a> |
+            <a href="https://www.linkedin.com/in/mrarthor/">Linkedin</a>
+
+            <br>
+            <br>
             <form class="form-horizontal">
                 <div class="form-group">
-                    <label for="from" class="col-xs-2 control-label"><i class="far fa-dot-circle"></i></label>
+                    <label for="from" class="col-xs-2 control-label">Enter Start Location</label>
                     <div class="col-xs-4">
                         <input type="text" id="from" placeholder="Origin" class="form-control">
                     </div>
                 </div>
+                <br>
                 <div class="form-group">
 
-                    <label for="to" class="col-xs-2 control-label"><i class="fas fa-map-marker-alt"></i></label>
+                    <label for="to" class="col-xs-2 control-label">Enter Destination</label>
                     <div class="col-xs-4">
                         <input type="text" id="to" placeholder="Destination" class="form-control">
                     </div>
@@ -36,12 +41,14 @@
                 </div>
 
             </form>
-
+            <br><br>
             <div class="col-xs-offset-2 col-xs-10">
-                <button class="btn btn-info btn-lg " onclick="calcRoute();"><i class="fas fa-map-signs"></i></button>
+                <button class="btn btn-info btn-lg " onclick="calcRoute();">Find The Distances <i class="fas fa-map-signs"></i></button>
             </div>
         </div>
-        <div class="container-fluid">
+        <h1>The Maps And The Distances Are </h1>
+
+        <div class="container">
             <div id="googleMap">
 
             </div>
